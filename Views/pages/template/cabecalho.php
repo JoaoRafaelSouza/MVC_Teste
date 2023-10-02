@@ -32,7 +32,6 @@
 
 <body>
 
-
     <header class="cabecalho">
         <a href="#" class="logo">João Rafael</a>
         <?php

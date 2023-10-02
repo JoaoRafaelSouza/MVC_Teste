@@ -7,3 +7,4 @@
     <h2>Bem vindo</h2>
     <p>Isto é apenas um teste, mas é pra mostrar que sei trabalhar com o MVC.</p>
 </div>
+

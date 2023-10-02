@@ -18,4 +18,6 @@ class Application
             die("Não existe controlador!");
         }
     }
+
+    
 }
