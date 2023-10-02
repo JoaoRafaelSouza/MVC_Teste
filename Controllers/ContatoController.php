@@ -11,3 +11,4 @@ class ContatoController extends Controller
         $this->view->render(array('titulo'=>'Contato'));
     }
 }
+?>

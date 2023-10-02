@@ -11,3 +11,5 @@ class PrincipalController extends Controller{
         $this->view->render(array('titulo'=>'Principal'));
     }
 }
+
+?>

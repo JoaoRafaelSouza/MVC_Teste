@@ -10,6 +10,5 @@ class SobreController extends Controller{
     {
         $this->view->render(array('titulo'=>'Sobre'));
     }
-
-    
 }
+?>
