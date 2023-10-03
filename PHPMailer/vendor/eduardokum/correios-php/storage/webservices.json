@@ -1,0 +1,18 @@
+{
+  "calculo": {
+    "homologacao": "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx",
+    "producao": "http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx"
+  },
+  "rastreamento": {
+    "homologacao": "http://webservice.correios.com.br/service/rastro",
+    "producao": "http://webservice.correios.com.br/service/rastro"
+  },
+  "sigep": {
+    "homologacao": "https://apphom.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente",
+    "producao": "https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente"
+  },
+  "logistica": {
+    "homologacao": "https://apphom.correios.com.br/logisticaReversaWS/logisticaReversaService/logisticaReversaWS",
+    "producao": "https://cws.correios.com.br/logisticaReversaWS/logisticaReversaService/logisticaReversaWS"
+  }
+}

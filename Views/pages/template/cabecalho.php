@@ -25,8 +25,6 @@
     <script src="<?php echo INCLUDE_PATH_FULL ?>JS/bootstrap.min.js"></script>
     <script src="<?php echo INCLUDE_PATH_FULL ?>JS/bootstrap-notify.min.js"></script>
     <script src="<?php echo INCLUDE_PATH_FULL ?>JS/jquery.mask.min.js"></script>
-    <script src="<?php echo INCLUDE_PATH_FULL ?>JS/complemento.js"></script>
-    <script src="<?php echo INCLUDE_PATH_FULL ?>JS/portifolio.js"></script>
 
 </head>
 

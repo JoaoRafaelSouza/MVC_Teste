@@ -1,13 +1,18 @@
 <?php
 namespace Controllers;
-
+use Models\ContatoModel;
+use Views;
 class ContatoController extends Controller
 {
     public function __construct(){
-        $this->view = new \Views\MainView('contato');
+        $this->view = new Views\MainView('contato');
     }
     public function executar()
     {
+        if(isset($_POST['acao'])){
+            ContatoModel::enviarFormulario();
+        }
+
         $this->view->render(array('titulo'=>'Contato'));
     }
 }
