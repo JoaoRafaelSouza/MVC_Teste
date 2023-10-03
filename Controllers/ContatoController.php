@@ -14,7 +14,7 @@ class ContatoController extends Controller
     public function executar()
     {
         if (isset($_POST['acao'])) {
-            // ContatoModel::enviarFormulario();
+            ContatoModel::enviarFormulario();
             // echo  INCLUDE_PATH . 'contato/sucesso';
             echo '<script>location.href="'.INCLUDE_PATH.'contato/sucesso"</script>';
             // echo '<script> alert("' . INCLUDE_PATH . 'contato/sucesso")</script>';

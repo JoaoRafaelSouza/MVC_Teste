@@ -1,46 +1,46 @@
 <?php
+	
+	class Email
+	{
+		
+		private $mailer;
 
-use PHPMailer\PHPMailer\PHPMailer;
+		public function __construct($host,$username,$senha,$name)
+		{
+			
+			$this->mailer = new PHPMailer;
 
-require 'PHPMailer/vendor/autoload.php';
+			$this->mailer->isSMTP();                                      
+			$this->mailer->Host = $host;  				  
+			$this->mailer->SMTPAuth = true;                               
+			$this->mailer->Username = $username;                 
+			$this->mailer->Password = $senha;                           
+			$this->mailer->SMTPSecure = 'ssl';                            
+			$this->mailer->Port = 465;                                    
 
-class Email
-{
-    private $mailer;
+			$this->mailer->setFrom($username,$name);
+			$this->mailer->isHTML(true);                                  
+			$this->mailer->CharSet = 'UTF-8';
 
-    public function __construct($host, $username, $senha, $name)
-    {
-        $this->mailer = new PHPMailer;
+		}
 
-        $this->mailer->isSMTP();
-        $this->mailer->Host = $host;
-        $this->mailer->SMTPAuth = true;
-        $this->mailer->Username = $username;
-        $this->mailer->Password = $senha;
-        $this->mailer->SMTPSecure = 'ssl';
-        $this->mailer->Port = 465;
+		public function addAdress($email,$nome){
+			$this->mailer->addAddress($email,$nome);
+		}
 
-        $this->mailer->setFrom($username, $name);
-        $this->mailer->isHTML(true);
-        $this->mailer->CharSet = 'UTF-8';
-    }
+		public function formatarEmail($info){
+			$this->mailer->Subject = $info['assunto'];
+			$this->mailer->Body    = $info['corpo'];
+			$this->mailer->AltBody = strip_tags($info['corpo']);
+		}
 
-    public function addAdress($email, $nome)
-    {
-        $this->mailer->addAddress($email, $nome);
-    }
-    public function formatarEmail($info)
-    {
-        $this->mailer->Subject = $info['assunto'];
-        $this->mailer->Body = $info['corpo'];
-        $this->mailer->AltBody = strip_tags($info['corpo']);
-    }
-    public function enviarEmail()
-    {
-        if ($this->mailer->send()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-}
+		public function enviarEmail(){
+			if($this->mailer->send()){
+				return true;
+			}else{
+				return false;
+			}
+		}
+
+	}
+?>
