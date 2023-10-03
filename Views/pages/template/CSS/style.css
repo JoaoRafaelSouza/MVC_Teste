@@ -1,34 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans";
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-.center{
+.center {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2%;
 }
 
-header{
-    background: #42a5f5;
+header {
+    background: #1a237e;
     padding: 10px 0;
 }
 
-.logo{
-    /* float: left; */
+.logo {
+    float: right;
     color: #fff;
 }
 
-nav{
+nav {
+    position: relative;
+    top: 8px;
+    font-size: 16px;
     /* float: right; */
 }
 
-nav a{
+nav a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
@@ -36,6 +40,102 @@ nav a{
     padding: 0 15px;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
+}
+
+.chamada {
+    text-transform: uppercase;
+    padding: 15px 10px;
+    background: #1e88e5;
+    text-align: center;
+}
+
+.chamada h2 {
+    text-align: center;
+    max-width: 200px;
+    display: inline-block;
+    color: #fff;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.principal {
+    padding: 40px 0;
+    
+}
+
+.principal h2 {
+    color: #4b4b4b;
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.sobre p{
+    margin-top: 15px;
+    font-size: 16px;
+    color: #4b4b4b;
+}
+
+.contato{
+    background: #1e88e5 rgba(#1e88e5 1.0);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contato form{
+width: 100%;
+    max-width: 600px;
+    display: inline-block;
+}
+
+.contato input[type=text]{
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    display: block;
+
+}
+
+.contato textarea{
+    margin-top: 8px;
+    width: 100%;
+    height: 120px;
+    display: block;
+    padding: 10px;
+}
+
+.contato input[type=submit]{
+    width: 100px;
+    height: 40px;
+    border: 1;
+    background: #42a5f5;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.alerta{
+    background: rgb(225, 225, 225);
+    padding: 8px;
+    border-left: 4px solid #4b4b4b;
+    margin: 10px;
+}
+
+.alerta h3{
+    font-size: 18px;
+    font-weight: normal;
+    color: #4b4b4b;
+    padding: 5px 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: #1a237e;
+    color: #fff;
 }

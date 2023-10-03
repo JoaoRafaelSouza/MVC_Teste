@@ -14,6 +14,9 @@
     <!-- Aqui eu tenho meu icone -->
     <link rel="shortcut icon" type="image/png" href="Imagens/icone.ico" />
 
+    <!-- Fontes do portal -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <!-- Aqui temos todos os css -->
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH_FULL ?>css/style.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH_FULL ?>CSS/bootstrap.min.css" />
@@ -34,7 +37,8 @@
         <header>
             <nav class="navbar navbar-expand-md navbar mb-4">
                 <div class="container-fluid center">
-                    <a href="#" class="navbar-brand logo">João Rafael</a>
+                
+                    <a href="<?php echo INCLUDE_PATH.'principal' ?>" class="navbar-brand logo">João Rafael</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>

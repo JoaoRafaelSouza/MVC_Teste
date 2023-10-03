@@ -3,7 +3,7 @@
         <h2><?php echo $arr['titulo'] ?></h2>
     </div>
 </div>
-<div class="contato col-">
+<div class="contato principal center">
     <h2>Eu estou apenas demonstrando!</h2>
     <p>Isto é apenas um teste, mas é pra mostrar que sei trabalhar com o MVC.</p>
     
