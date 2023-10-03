@@ -11,6 +11,7 @@ class ContatoController extends Controller
     {
         if(isset($_POST['acao'])){
             ContatoModel::enviarFormulario();
+            echo '<script> alert("Enviado com sucesso!")</script>';
         }
 
         $this->view->render(array('titulo'=>'Contato'));

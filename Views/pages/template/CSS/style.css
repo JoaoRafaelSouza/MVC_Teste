@@ -4,6 +4,38 @@
     box-sizing: border-box;
 }
 
-/* body{
-    background: black;
-} */
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    background: #42a5f5;
+    padding: 10px 0;
+}
+
+.logo{
+    /* float: left; */
+    color: #fff;
+}
+
+nav{
+    /* float: right; */
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    padding: 0 15px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}

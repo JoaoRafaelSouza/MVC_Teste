@@ -31,21 +31,24 @@
 <body>
 
     <div class="col-12">
-        <nav class="navbar navbar-expand-md navbar mb-4">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand">João Rafael</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <?php
-                    echo '<ul class="navbar-nav me-auto mb-2 mb-md-0">';
-                    foreach ($this->menuItens as $key => $value) {
-                        echo '<li class="nav-item">';
-                        echo '<a href="' . INCLUDE_PATH . strtolower($value) . '" class="nav-link active" aria-current="page">' . $value . '</a></li>';
-                    }
-                    echo '</ul>';
-                    ?>
+        <header>
+            <nav class="navbar navbar-expand-md navbar mb-4">
+                <div class="container-fluid center">
+                    <a href="#" class="navbar-brand logo">João Rafael</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <?php
+                        echo '<ul class="navbar-nav me-auto mb-2 mb-md-0">';
+                        foreach ($this->menuItens as $key => $value) {
+                            echo '<li class="nav-item">';
+                            echo '<a href="' . INCLUDE_PATH . strtolower($value) . '" class="nav-link active" aria-current="page">' . $value . '</a></li>';
+                        }
+                        echo '</ul>';
+                        ?>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
