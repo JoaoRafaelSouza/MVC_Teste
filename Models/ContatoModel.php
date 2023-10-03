@@ -3,7 +3,6 @@ namespace Models;
 
 class ContatoModel{
     public static function enviarFormulario(){
-        // $mail = new \Email();
         $mail = new \Email('vps.dankicode.com', 'testes@dankicode.com', 'gui123456', 'Guilherme');
 
         $mail->addAdress('joao.rafael.quin@gmail.com', 'Joao');
