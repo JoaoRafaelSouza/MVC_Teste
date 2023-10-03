@@ -2,7 +2,7 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 
-require('PHPMailer/vendor/autoload.php');
+require 'PHPMailer/vendor/autoload.php';
 
 class Email
 {
